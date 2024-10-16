@@ -3,21 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site d'Artiste</title>
+    <title>Nom Prénom - Artiste</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            width: 100%;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            margin: 1rem 0;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        main {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
         }
         h1 {
-            color: #333;
+            font-size: 2rem;
+            margin: 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            width: 100%;
+            padding: 1rem;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>Bienvenue sur mon site d'artiste</h1>
-    <p>Ici, vous pouvez présenter votre travail et parler de vous.</p>
+    <header>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <img src="chemin_vers_votre_image.jpg" alt="Mon dessin">
+        <h1>Nom Prénom</h1>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nom Prénom. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
